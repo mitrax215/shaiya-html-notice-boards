@@ -1,0 +1,147 @@
+/* CSS CROSS BROWSER RESET - by Eric Meyer */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0; vertical-align:baseline;}:focus{outline:0;}body{line-height:1;color:black;background:white;}ol,ul{list-style:none;}table{border-collapse:separate;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}
+
+/* NOTICE Styles */
+body, html{background:#fff;overflow:hidden;}
+* {color:#FFF;font-family:Arial;font-style:Normal;font-size:12px;text-decoration:none;}
+/* font:Normal 12px Arial */
+#noticeWindow {background:#fff;height:467px;overflow:hidden;width:694px;}
+#bodyWin {height:402px;left:0;overflow:hidden;position:relative;top:0;width:749px;z-index:1;}
+.pgImg {background:url(../img/pic_background.jpg) no-repeat top center;background-size: cover;}
+.eniImg {background:url(../img/sprite_1.png) no-repeat -18px -30px;}
+
+#links {height:43px;width:373px;position: absolute; bottom:3px;left:341px;z-index:5;}
+
+#links a {cursor:pointer;float:left;height:60px;margin-right:1px;}
+#links #website {width:123px;height:43px;}
+#links #website:hover {background:url(../img/sprite_1.png) -594px -239px;}
+#links #store {width:107px;height:43px}
+#links #store:hover {background:url(../img/sprite_1.png) -485px -239px;}
+#links #register {width:110px;height:43px;}
+#links #register:hover {background:url(../img/sprite_1.png) -374px -239px;}
+#register {margin-left:15px}
+/* #tabsLinks{z-index: 11;} */
+#newsNeventsNlinks{z-index:5;}
+
+#theNews, #theEvents, #theOffers {border-left:5px none;overflow:hidden;}
+#theNews, #theEvents, #theOffers {position:fixed;height:156px;width:338px;}
+
+#newsTab a, #eventsTab a, #offersTab a{height:24px;width:111px;margin:0;padding:6px 0 5px 0;float:left;text-align:center;text-decoration:none;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0; z-index: 5;}
+
+#newsTab a, #newsTab .unactive {color:#1d6798;text-indent:-1000px; background-position: 100px 100px;z-index:5;}
+#newsTab a, #newsTab .active{color:#ccecff; text-indent:-1000px; background-position: 100px 100px;z-index:5;}
+#newsTab a.active:hover, #newsTab .active{background-position:-22px -448px;z-index:5;}
+#newsTab a:hover{background-position:-24px -247px;z-index:5;}
+
+#eventsTab a, #eventsTab .unactive {color:#1d6798;text-indent:-1000px; background-position: 100px 100px;z-index:5;}
+#eventsTab a.active:hover, #eventsTab .active {background-position:-134px -448px;z-index:5;}
+#eventsTab a:hover{background-position:-135px -247px;z-index:5;}
+
+#offersTab a, #offersTab .unactive {color:#1d6798;text-indent:-1000px; background-position: 100px 100px;z-index:5;}
+#offersTab a.active:hover,#offersTab .active {background-position:-248px -448px;z-index:5;}
+#offersTab a:hover{background-position:-246px -247px;z-index:5;}
+
+#outerNewsNEventsBx{display:none;position:absolute;width:695px;left:0;height:188px;bottom:8px;z-index:5;}
+
+#newsNEventsBx{display:none;position:absolute;width:720px;left:0;height:202px;bottom:0;z-index:5;}
+#newsNEventsBx h3 {display: inline;word-wrap:break-word;font:bold 12px Arial;line-height:14px;letter-spacing:-0.5px; margin:0 0 2px;}/*position:relative;top:-26px;width:220px;}*/
+#newsNEventsBx p.description {color: #999999;word-wrap:break-word;display:block;left:20px;position:relative;width:300px;}
+#newsNEventsBx{display:block;z-index:5;}
+
+#newsNeventsNlinks{height:31px;width:333px;margin:12px 6px 0 6px;}
+.noNews{margin:5px;}
+
+/* Events */
+
+#eventsContent, #newsContent, #offersContent {float:left;font:11px normal Arial;margin:5px 10px 0 13px}
+
+/* #eventsContent img, #newsContent img, #offersContent img{margin: 0 0 0 3px;} */
+
+#newsContent img.breakimg, #eventsContent img.breakimg {display:block;margin-left:auto;margin-right:auto;padding:3px 5px 0px;}
+
+#eventsContent a.eventsCell, #newsContent a.newsCell, #offersContent a.offersCell {float:left;
+    word-wrap:break-word;
+    /* padding:8px; */
+    width:318px;
+    position:relative;
+    /* margin: 0 0 5px 15px; */
+}
+
+.announcementItem a, .event-even a, .event-odd a {padding: 0 0 0 8px;display:block;margin:0;padding:0;text-decoration:none;width:100%;}
+/*list-style-image: url("https://static.aeriagames.com/files/fantasia_fr/image/a/arrow.png")
+  display:list-item
+*/
+.announcementItem, .event-even, .event-odd {display:block;background:none;cursor:pointer;margin: 10px 0 5px 10px;;padding:0;position:relative;width:auto;font-weight: bold;}
+.announcementItem a:hover, .event-even a:hover, .event-odd a:hover {background:url(../img/sprite_1.png) 0px -528px; color:#333;}
+.announcementItem .title, .event-even a, .event-odd a {color:#827d73;height:98%;font:bold 12px Arial;line-height:37px;margin:0;overflow:hidden;padding:0 0 0 11px;width:331px;}
+.announcementItem .date, .event-timeleft {color:#595959;height:100%;font:normal 9px Arial;line-height:38px;margin:0;overflow:hidden;padding:0;position:absolute;right:6px;top:0;width:45px;}
+
+.event-timeleft {width:auto;}
+
+.clearIt, .clear {display:none;}
+
+#launcherlink {
+    position:absolute;
+    top:64px;
+    left:0px;
+    width:694px;
+    height:276px;
+    display:none;
+}
+
+#loading {background:#fff none repeat scroll 0 0;height:456px;position:absolute;top:0;left:0;width:720px;z-index:999;}
+div#bannerContent {position: absolute; top:0; left:0; width: 749px; height: 402px; z-index: 1;background-repeat:no-repeat; background-color: transparent;}
+
+/* Itemmall */
+
+.apIconShop {background-image: url("../img/ap_32x32.png"); width: 32px; height: 28px; display: inline-block; top: 8px; position: relative; *zoom: 1; *display: inline;}
+.apIconShop.eur { background-image: url('../img/eur_32x32.png') }
+.apIconTransparent.eur { background-image: url('../img/eur_32x32_transparent.png') }
+.apIconShop.usd { background-image: url('../img/usd_32x32.png') }
+.apIconTransparent.usd { background-image: url('../img/usd_32x32_transparent.png') }
+.item-container{display:inline;float:left;}
+.item{position:relative;}
+
+.item-image{
+    /* margin:0 5px 5px 0;border:solid 2px #666;*/
+}
+.item-image,
+.item-image-link,
+
+.item-details{position:relative;z-index:0;}
+.item-purchase{padding-right:0;}
+.item-control-group,
+.item-control,
+.item-purchase .form-item,
+.item-control-label{display:inline;float:left;}
+.item-control-group{background:#555;}
+.item-control{width:16px;text-align:center;font:bold 14px/18px Arial, Helvetica, sans-serif;}
+.item-purchase .form-item{padding:0;margin:0;}
+.item-purchase .form-text{font-size:11px;width:16px;text-align:center;padding:0;margin:2px 0 0;border:solid 0;}
+
+
+.item-title{border:solid 0;padding:0;margin:0 0 5px;font-weight:bold;text-transform:none;word-wrap:break-word;}
+.item-icon{display:inline;float:left;height: 34px;width: 33px;}
+#item-panels .item-wrap{height:60px; width:315px;margin: 10px 0 0 10px;
+    /* background-color: rgba(0,0,0,0.1);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#16000000,endColorstr=#16000000);
+    */
+}
+#item-panels .item-title a{margin: 0 0 0 10px;color:#fff;}
+#item-panels .item-title a:hover{color:#b7df88;}
+
+.box-tag.item-featured-hot, .box-tag.tag-hot{display:none;}
+/* .item-image.item-featured-hot, .item-image.tag-hot{display:none;}  */
+.box-tag.item-featured-sale, .box-tag.tag-sale{display:none;}
+/*  .item-image.item-featured-sale, .item-image.tag-sale{display:none;} */
+.box-tag.item-featured-new, .box-tag.tag-new{display:none;}
+/*.item-image.item-featured-new, .item-image.tag-new{display:none;}  */
+.box-tag.item-featured-promo, .box-tag.tag-promo{display:none;}
+/*.item-image.item-featured-promo, .item-image.tag-promo{display:none;} */
+.box-tag.item-qty{left: -25px;position: relative;text-align: right;}
+
+.item-price{font-size:10px;}
+.item-price del{color:grey;text-decoration: line-through;}
+.apIconTransparent {background-image: url("../img/ap_32x32_transparent.png");}
+.item-price{line-height:18px;float:left;display:inline;margin:0 0 0 10px;}
+.item-bogo{display:none;}
